@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Mall</title>
+      <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARZJREFUSEvtltERgjAMhn820UnUSdRJ1El0E3US3UTv44DL9QqkVegLeeEOSv7kS9K2UiGrCulqEZ6NvEW9knSXxHMKe0g6Snrj3AqfJZ2mUDQ+Eb6VEL5IIsHRjMFSo5G0ddIAKUbJwrK5hcECHuzlqD9Brpv1V0mHIFi3MNHvBhyFEDrHkj4RQm5h/iUDMvF0vV0Lod7APF1ts6DOIIyNHGTa+jKWsZ5IypiouzFoRKndpiHxbEfENCHCMUsWDsX7GpyAINJnWcI4AyU/2zHjPYJ7x8hlC9tMCCI2qwMJ10G7NpAhJznfFuGa2hyn04K6LOqxXSdnfFyHBIv6Nvd/iNojNnqv9t40UoIJt9jlQp9C77e1XxbjTB/JyZzdAAAAAElFTkSuQmCC" type="image/icon type">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body style="background-color: rgba(157, 255, 0, 0.253);" id="home" onload="showTime()">
+    <!--nav bar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Shopping Mall
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARZJREFUSEvtltERgjAMhn820UnUSdRJ1El0E3US3UTv44DL9QqkVegLeeEOSv7kS9K2UiGrCulqEZ6NvEW9knSXxHMKe0g6Snrj3AqfJZ2mUDQ+Eb6VEL5IIsHRjMFSo5G0ddIAKUbJwrK5hcECHuzlqD9Brpv1V0mHIFi3MNHvBhyFEDrHkj4RQm5h/iUDMvF0vV0Lod7APF1ts6DOIIyNHGTa+jKWsZ5IypiouzFoRKndpiHxbEfENCHCMUsWDsX7GpyAINJnWcI4AyU/2zHjPYJ7x8hlC9tMCCI2qwMJ10G7NpAhJznfFuGa2hyn04K6LOqxXSdnfFyHBIv6Nvd/iNojNnqv9t40UoIJt9jlQp9C77e1XxbjTB/JyZzdAAAAAElFTkSuQmCC"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../Implementation/shopping mall.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Implementation/Return&order.html">Order & Returns</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EN
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">हिंदी<</a></li>
+                <li><a class="dropdown-item" href="#">ગુજરાતી</a></li>
+                <li><a class="dropdown-item" href="#">ਪੰਜਾਬੀ</a></li>
+                <li><a class="dropdown-item" href="#">لتاميل</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Implementation/Cart.html">Cart</a>
+            </li>
+           </ul>
+          <form class="d-flex">
+            <ul class="nav justify-content-end">
+              <li class="nav-item" id="sign">
+                <a href="Sign_in.html" style="color: black;">Sign_in</a>
+              </li>
+              </ul>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" style="background-color: yellow;">Search</button>
+          </form>
+        </div>
+        </div>
+    </nav>
+      <!--nav ends-->
+
+    <!-- Developer section (About) Start -->
+    <section id="about-section">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="rounded-circle" src="../Implementation/about1.jpg" alt="DVPimg" width="140" height="140">
+                    <h2>Rishabh Gupta</h2>
+                    <p>Welcome ! I am Rishabh Gupta ...</p>
+                    <p><a class="btn btn-primary" href="#rishabh" role="button">View details »</a></p>
+                </div>
+                <div class="col-lg-6">
+                    <img class="rounded-circle" src="../Implementation/About2.jpg" alt="DVPimg" width="140" height="140">
+                    <h2>Nikhil Saini</h2>
+                    <p>Welcome ! I am Nikhil Saini ...</p>
+                    <p><a class="btn btn-primary" href="#nikhil" role="button">View details »</a></p>
+                </div>
+            </div>
+            <div class="row mt-3 border-top">
+                <div class="col-md-8 mt-3" >
+                    <h1><span class="text-muted">Developed By:-</span>Rishabh Gupta </h1>
+                    <p>Hi there! I'm Rishabh Gupta, the developer of our this Shopping Mall site for Products shopping. My goal is to make your shopping journey smooth.<br> RISHABH GUPTA</p>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <img src="../Implementation/about1.jpg" style="width: 400px; height: 300px;">
+                </div>
+            </div>
+            <div class="row mt-3 border-top mb-3">
+                <div class="col-md-4 mt-3">
+                    <img src="../Implementation/About2.jpg" style="width: 400px; height: 300px;">
+                </div>
+                <div class="col-md-8 mt-3 mb-3" >
+                    <h1><span class="text-muted">Developed By:-</span>Nikhil Saini</h1>
+                    <p>Hi there! I'm Nikhil Saini, the developer of our this Shopping Mall site for Products shopping.My goal is to make your shopping journey smooth.<br> NIKHIL SAINI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <Div class="container">
+        <div class="row">
+            <div class="col-md-6" id="rishabh">
+              <h3>Rishabh Gupta</h3>
+              <h6><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAb5JREFUSEvtlb8rRmEUxz+vEiExGYSBYmexkcmgyMBiNFlsBgNWJht/gTIoxeJXZLIpymBRDEQG+ZHBj746V897vfe59763vAOn7nTPcz7f8z3nPjdHiSJXIi7/4F9zPq3VfcAQMAhcAbv27KVVnATswhojAM+OCIk5jRMSBU4C89W+AHYcMbfhZBecFeYTchQeiwueBWbiLMr4fg4QJ+87rgRG7OnPCAgfPweWgSXgKQx2k5uAURPRmUHEgQFXfDOOqi+wnJAQCUoSAqlDgQtG1FY3ADcFTmgEwTg0GjdkoawUUNYGUWv2vrnJUWAlHQKr9tyFIO4+tIXnZ7ntwCQwBqiRr9kGEQX+cHJkV49ZvQE8erwus5ttAuh18qoBXTJFgSXmFdgG1oB14N4q1QHjgIAtBYTVZOnYdUG134F94NLcqPA4UQW8ZOnYU9v7KnHHZ0CHlVJnm8BAkdQHoN4cip1xF7BlB4rkfR+bAubDRXy/Rf0CF4HhIsnaiQVA4B+R5H+s7qcBXR6+BXKLa/O14e5FkgdPAg4OCNoNtALN9tnIlXJLOLFdOAau41xKA46rler9PziVXVmS/57Vn0HbWR/yLnkUAAAAAElFTkSuQmCC"/>B.Tech 2024:Abes Institute of Technology</h6>
+              <h6><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbtJREFUSEvt1rtrFFEUx/HPSqKlgZBCxMc/ICFNEBsb7XyABEJAC21ECBKw8VGoqGghKFrYCWIgCEHw0ZkinUIKi5BSlIBYiIU2YiIqR+7IdXAzm3XYbXaquXfO/X3P/O65j4YuPY0ucfXAHXO+bPVJnMXOmjN4hyu4X+jm4L2YrxlYlhvFQnTm4PO4liIv15zAxaR3DjfK4EsoAo5huib4UTzMfig4f/1xDo5v9zCFlTYT2IjbOJWNDycrwRH/Ggfxfp3wrXiGkdK4SnDYHBbF8wkTeNEifD9mMJjic61/gmN+f9uQpuA0bqIfP9L8R/H9bJJAFOoFhPgGrOIM7mZjWgKH/m48xVCCzWEMn0vwzZjFvtT/AUfwKrWLZCutzpfZFjxOSYTOMg5gMYnuwnNsT+2AHcLHLLm2wDG+D7cwmcS+4UR6j91oU3q/k+z9XnKkbXChM44HGajo/4rjeNRk/v8bHLrDeIIdCfIGh7G0RtXXAg79AYStUe1R/V8qllpt4BaX9J+wHrjjx2IcvdeLrbGYiE5cBPbgZRkc7TjC4rDett7qqYh/i6vNrj41s9aW692rO2Z316z+BRs3ZB8+F4SyAAAAAElFTkSuQmCC"/>rishabh2020cs028@abesit.edu.in</h6>
+              <h6><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAdNJREFUSEvt1s2rTlEUx/HPRSI3ZCApQy4GBkiKJBcDGXpLxphIIkVSklIiycQ1Y+IlE3+AiIFCkgkxMpKBt5SUt5aOOm1nn3Oe+xzdAXu4zlq/795r7b3WGTBGa2CMuP6Dy5k/jH04j2Ndl6Qq1ZNwCZtLsKM43iU8BU/BLSyrgOzGha7gKXgF7mXEf2ArrncBT8GrcKdG+CvW4Xa/8BS8CE8aRD9jMZ71A0/B0/GuheBBnGrhl3WputWvMKdG9DFW42PX4KvYkhF9WNT4fT/QiK068Q5crhB+gDX41C80B56GN5iYAObhRRfQHDjs0Sh2JpD9OPO3wQvxFONKoA+Yj9cZ+Exsx108atpg3Vg8i72JQGwmbvTbxD6j6HgL8A1xT67UwevAg3iO2YlA2DbiZWGP/h6dbGnitwsjOXjTj8CSInWTE4HvuIiTxX1YnwEcKnz++NwEjoA43c3M02sqZXyPeb4ndWwDjphtxdue0IZU4XMaB8r2tuCIiXReQ7zzXlc0namI0fpr9QIO/1k4l/ydtNnEEZwY7YnLcSuL6bS8BfUGNo22xjn9uViLDRhGevvvF+/+S9fgst54DCE62O8V06xyqPRa4xaZbefy74F/AiXLQx/sI7IMAAAAAElFTkSuQmCC"/>+91 7505576998</h6>
+              <h6><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXxJREFUSEvt1jFLHEEUAODvEI2NYBdsksIUKSysFIKgkMYiSIqgTQLBJkX8A/4B8QdoY6Vok2AhkiJNwICkEEELC4tYxM5CQWxUSJSBPVnW83Zn7+SK3JS78943+3gzOxUtGpUWuRqBR/APv8osviz8HqsJ+AFrsXgZeBzf0JFgf/EG32PwWHgIP9GdQS7xCntF8Ri4H7vofSD5KYZxVAQvCj/FDp7lJD1GqMpJHl4E7kk6dyAvWfL+ICn7Rb35eXAXfiBsnZixjde4fiioHhzebWAiRkzN3cRb3NSKrwcv4HNJtBq2iJkYeBZzDaLV8JBrPpur1henT6Um2e6dblk4eyo1C753uqXhl9jHk2ZpmTxXGMRheJ6GQyOFhnrM8QlLWbgT0+hL5I943uAq/mA5yXGGFZxn4ayxhdEG4fBDGYvZTmFuGy5T9Xap76pW7yfx/zXXF0yW6ahUzFdMxe7jF3hX40ZZdC3h5rmO37FwUaDUvLw7V6mkRYJuAbYxQR+mVVXLAAAAAElFTkSuQmCC"/>B-94 B-Block,GangaNagar, Bulandshahar, Uttar pradesh, India, 203001</h6>
+              <h6><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAV9JREFUSEvt179LV2EUx/GX0BAIIWhSSA02GIS4uUX5D1R/hlRQzToJOiqC4uTmHyCEm6Dg1CyBoAQKoaWLo4MoB54Lj1cJv3zv917BzvY8l3Pe93zOeX51aci6GuK6U+DnGKxYiV84yGOWM36K31SuxAUGcFjAy+C32Kg42yLcGDZbAe/iGR62+UMtgd/hO7qxhjdtwG8N/oMnGWgcS3WAz9GL0wSbxbc6wMFYxzJe4TN66gK3wbnmeusah+eHTOovabySVIjvo4gGnMMW/uI1phBLM7eWwI9xkrwX8AnTmExzUYI9nJUgD7CNl9l8peAi7jCOcJyBPmKxk+BVvEesghH8TLAow49OgR9lPRCMCcwkWBw2+50Cv0g1LuLP42sa9JWkb6nG/ZnzTc01hJ0sq9jZorZh0ZjR5YX9B19ZgeXz+P5J3dheXRu4scteZNjI9bZKaf8Z6069JGrJ+hJQKIAfFGduPAAAAABJRU5ErkJggg=="/><a href="https://www.linkedin.com/in/rishabh-gupta-560770213">https://www.linkedin.com/in/rishabh-gupta-560770213</a></h6>
+              <img src="../Implementation/icons8-github.svg"><a href="https://github.com/Rishabhg24">https://github.com/Rishabhg24</a><br>
+            </div>
+            <div class="col-md-6" id="nikhil">
+                <h3>Nikhil Saini</h3>
+            <h6><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAb5JREFUSEvtlb8rRmEUxz+vEiExGYSBYmexkcmgyMBiNFlsBgNWJht/gTIoxeJXZLIpymBRDEQG+ZHBj746V897vfe59763vAOn7nTPcz7f8z3nPjdHiSJXIi7/4F9zPq3VfcAQMAhcAbv27KVVnATswhojAM+OCIk5jRMSBU4C89W+AHYcMbfhZBecFeYTchQeiwueBWbiLMr4fg4QJ+87rgRG7OnPCAgfPweWgSXgKQx2k5uAURPRmUHEgQFXfDOOqi+wnJAQCUoSAqlDgQtG1FY3ADcFTmgEwTg0GjdkoawUUNYGUWv2vrnJUWAlHQKr9tyFIO4+tIXnZ7ntwCQwBqiRr9kGEQX+cHJkV49ZvQE8erwus5ttAuh18qoBXTJFgSXmFdgG1oB14N4q1QHjgIAtBYTVZOnYdUG134F94NLcqPA4UQW8ZOnYU9v7KnHHZ0CHlVJnm8BAkdQHoN4cip1xF7BlB4rkfR+bAubDRXy/Rf0CF4HhIsnaiQVA4B+R5H+s7qcBXR6+BXKLa/O14e5FkgdPAg4OCNoNtALN9tnIlXJLOLFdOAau41xKA46rler9PziVXVmS/57Vn0HbWR/yLnkUAAAAAElFTkSuQmCC"/>B.Tech 2024:Abes Institute of Technology</h6>
+            <h6><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbtJREFUSEvt1rtrFFEUx/HPSqKlgZBCxMc/ICFNEBsb7XyABEJAC21ECBKw8VGoqGghKFrYCWIgCEHw0ZkinUIKi5BSlIBYiIU2YiIqR+7IdXAzm3XYbXaquXfO/X3P/O65j4YuPY0ucfXAHXO+bPVJnMXOmjN4hyu4X+jm4L2YrxlYlhvFQnTm4PO4liIv15zAxaR3DjfK4EsoAo5huib4UTzMfig4f/1xDo5v9zCFlTYT2IjbOJWNDycrwRH/Ggfxfp3wrXiGkdK4SnDYHBbF8wkTeNEifD9mMJjic61/gmN+f9uQpuA0bqIfP9L8R/H9bJJAFOoFhPgGrOIM7mZjWgKH/m48xVCCzWEMn0vwzZjFvtT/AUfwKrWLZCutzpfZFjxOSYTOMg5gMYnuwnNsT+2AHcLHLLm2wDG+D7cwmcS+4UR6j91oU3q/k+z9XnKkbXChM44HGajo/4rjeNRk/v8bHLrDeIIdCfIGh7G0RtXXAg79AYStUe1R/V8qllpt4BaX9J+wHrjjx2IcvdeLrbGYiE5cBPbgZRkc7TjC4rDett7qqYh/i6vNrj41s9aW692rO2Z316z+BRs3ZB8+F4SyAAAAAElFTkSuQmCC"/>nikhil2020cs163@abesit.edu.in</h6>
+            <h6><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAdNJREFUSEvt1s2rTlEUx/HPRSI3ZCApQy4GBkiKJBcDGXpLxphIIkVSklIiycQ1Y+IlE3+AiIFCkgkxMpKBt5SUt5aOOm1nn3Oe+xzdAXu4zlq/795r7b3WGTBGa2CMuP6Dy5k/jH04j2Ndl6Qq1ZNwCZtLsKM43iU8BU/BLSyrgOzGha7gKXgF7mXEf2ArrncBT8GrcKdG+CvW4Xa/8BS8CE8aRD9jMZ71A0/B0/GuheBBnGrhl3WputWvMKdG9DFW42PX4KvYkhF9WNT4fT/QiK068Q5crhB+gDX41C80B56GN5iYAObhRRfQHDjs0Sh2JpD9OPO3wQvxFONKoA+Yj9cZ+Exsx108atpg3Vg8i72JQGwmbvTbxD6j6HgL8A1xT67UwevAg3iO2YlA2DbiZWGP/h6dbGnitwsjOXjTj8CSInWTE4HvuIiTxX1YnwEcKnz++NwEjoA43c3M02sqZXyPeb4ndWwDjphtxdue0IZU4XMaB8r2tuCIiXReQ7zzXlc0namI0fpr9QIO/1k4l/ydtNnEEZwY7YnLcSuL6bS8BfUGNo22xjn9uViLDRhGevvvF+/+S9fgst54DCE62O8V06xyqPRa4xaZbefy74F/AiXLQx/sI7IMAAAAAElFTkSuQmCC"/>+91 8791346575</h6>
+            <h6><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXxJREFUSEvt1jFLHEEUAODvEI2NYBdsksIUKSysFIKgkMYiSIqgTQLBJkX8A/4B8QdoY6Vok2AhkiJNwICkEEELC4tYxM5CQWxUSJSBPVnW83Zn7+SK3JS78943+3gzOxUtGpUWuRqBR/APv8osviz8HqsJ+AFrsXgZeBzf0JFgf/EG32PwWHgIP9GdQS7xCntF8Ri4H7vofSD5KYZxVAQvCj/FDp7lJD1GqMpJHl4E7kk6dyAvWfL+ICn7Rb35eXAXfiBsnZixjde4fiioHhzebWAiRkzN3cRb3NSKrwcv4HNJtBq2iJkYeBZzDaLV8JBrPpur1henT6Um2e6dblk4eyo1C753uqXhl9jHk2ZpmTxXGMRheJ6GQyOFhnrM8QlLWbgT0+hL5I943uAq/mA5yXGGFZxn4ayxhdEG4fBDGYvZTmFuGy5T9Xap76pW7yfx/zXXF0yW6ahUzFdMxe7jF3hX40ZZdC3h5rmO37FwUaDUvLw7V6mkRYJuAbYxQR+mVVXLAAAAAElFTkSuQmCC"/>Vill:-Walipura,Post agriculture, Bulandshahar, Uttar pradesh, India, 203001</h6>
+            <h6><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAV9JREFUSEvt179LV2EUx/GX0BAIIWhSSA02GIS4uUX5D1R/hlRQzToJOiqC4uTmHyCEm6Dg1CyBoAQKoaWLo4MoB54Lj1cJv3zv917BzvY8l3Pe93zOeX51aci6GuK6U+DnGKxYiV84yGOWM36K31SuxAUGcFjAy+C32Kg42yLcGDZbAe/iGR62+UMtgd/hO7qxhjdtwG8N/oMnGWgcS3WAz9GL0wSbxbc6wMFYxzJe4TN66gK3wbnmeusah+eHTOovabySVIjvo4gGnMMW/uI1phBLM7eWwI9xkrwX8AnTmExzUYI9nJUgD7CNl9l8peAi7jCOcJyBPmKxk+BVvEesghH8TLAow49OgR9lPRCMCcwkWBw2+50Cv0g1LuLP42sa9JWkb6nG/ZnzTc01hJ0sq9jZorZh0ZjR5YX9B19ZgeXz+P5J3dheXRu4scteZNjI9bZKaf8Z6069JGrJ+hJQKIAfFGduPAAAAABJRU5ErkJggg=="/><a href="https://www.linkedin.com/in/nikhil-saini-0a7559271">https://www.linkedin.com/in/nikhil-saini-0a7559271</a></h6>
+            <img src="../Implementation/icons8-github.svg"><a href="https://github.com/Rishabhg24">https://github.com/Nikhilsaini0502</a><br>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

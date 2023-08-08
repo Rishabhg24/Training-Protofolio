@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Mall</title>
+      <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARZJREFUSEvtltERgjAMhn820UnUSdRJ1El0E3US3UTv44DL9QqkVegLeeEOSv7kS9K2UiGrCulqEZ6NvEW9knSXxHMKe0g6Snrj3AqfJZ2mUDQ+Eb6VEL5IIsHRjMFSo5G0ddIAKUbJwrK5hcECHuzlqD9Brpv1V0mHIFi3MNHvBhyFEDrHkj4RQm5h/iUDMvF0vV0Lod7APF1ts6DOIIyNHGTa+jKWsZ5IypiouzFoRKndpiHxbEfENCHCMUsWDsX7GpyAINJnWcI4AyU/2zHjPYJ7x8hlC9tMCCI2qwMJ10G7NpAhJznfFuGa2hyn04K6LOqxXSdnfFyHBIv6Nvd/iNojNnqv9t40UoIJt9jlQp9C77e1XxbjTB/JyZzdAAAAAElFTkSuQmCC" type="image/icon type">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body style="background-color: rgba(157, 255, 0, 0.253);" id="home" onload="showTime()">
+    <!--nav bar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Shopping Mall
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARZJREFUSEvtltERgjAMhn820UnUSdRJ1El0E3US3UTv44DL9QqkVegLeeEOSv7kS9K2UiGrCulqEZ6NvEW9knSXxHMKe0g6Snrj3AqfJZ2mUDQ+Eb6VEL5IIsHRjMFSo5G0ddIAKUbJwrK5hcECHuzlqD9Brpv1V0mHIFi3MNHvBhyFEDrHkj4RQm5h/iUDMvF0vV0Lod7APF1ts6DOIIyNHGTa+jKWsZ5IypiouzFoRKndpiHxbEfENCHCMUsWDsX7GpyAINJnWcI4AyU/2zHjPYJ7x8hlC9tMCCI2qwMJ10G7NpAhJznfFuGa2hyn04K6LOqxXSdnfFyHBIv6Nvd/iNojNnqv9t40UoIJt9jlQp9C77e1XxbjTB/JyZzdAAAAAElFTkSuQmCC"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../Implementation/shopping mall.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Implementation/Return&order.html">Order & Returns</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EN
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">हिंदी<</a></li>
+                <li><a class="dropdown-item" href="#">ગુજરાતી</a></li>
+                <li><a class="dropdown-item" href="#">ਪੰਜਾਬੀ</a></li>
+                <li><a class="dropdown-item" href="#">لتاميل</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Implementation/Cart.html">Cart</a>
+            </li>
+           </ul>
+          <form class="d-flex">
+            <ul class="nav justify-content-end">
+              <li class="nav-item" id="sign">
+                <a href="Sign_in.html" style="color: black;">Sign_in</a>
+              </li>
+              </ul>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" style="background-color: yellow;">Search</button>
+          </form>
+        </div>
+        </div>
+    </nav>
+      <!--nav ends-->
+      <div id="clock"> 
+        
+      </div>
+
+    <!--curosal starts-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../Implementation/3.png" class="d-block w-100" alt="..." height="300px">
+          </div>
+          <div class="carousel-item">
+            <img src="../Implementation/1.png" class="d-block w-100" alt="..." height="300px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--curosal ends-->
+      <!--cards-->
+      <div class="row gy-3">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+             <div class="card-body">
+               <h5 class="card-title"> Home Appliances | Upto 10% off</h5>
+              <div class="row">
+                <div class="col">
+                  <img src="../Implementation/ttt.jpg" class="card-img-top" alt="phone" >
+                  <a href="../Implementation/PPNew/p.html">Mobile Phones</a>
+                </div>
+                <div class="col">
+                  <img src="../Implementation/Acccccc.jpg" class="card-img-top" alt="AC" >
+                  <a href="../Implementation/PPNew/air_conditioner1.html">Air conditioner</a>
+                </div>
+                </div>
+                <br>
+                <div class="row">
+                <div class="col">
+                  <img src="../Implementation/ovennnn.jpg" class="card-img-top" alt="..." >
+                  <a href="../Implementation/PPNew/oven1.html">Oven</a>
+                </div>
+                <div class="col">
+                  <img src="../Implementation/re.jpg" class="card-img-top" alt="..." >
+                  <a href="../Implementation/PPNew/fridge1.html">Fridge</a>
+                </div>
+              </div>
+              <br><br>
+              <a href="../Implementation/PPNew/seemore1.html" class="btn btn-primary">Show More</a>
+            </div>
+          </div>
+        </div>
+        <!--card 1 finish-->
+        <!--card 2 start-->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Styles for Men | Upto 15% off</h5>
+             <div class="row">
+               <div class="col">
+                 <img src="../Implementation/Aw.jpg" class="card-img-top" alt="Watches" width="100px" height="100px">
+                 <a href="../Implementation/PPNew/watches.html">Watches</a>
+               </div>
+               <div class="col">
+                 <img src="../Implementation/clo.jpg" class="card-img-top" alt="AC" width="100px" height="100px">
+                 <a href="../Implementation/PPNew/clothing1.html">Clothing</a>
+               </div>
+               </div>
+               <br>
+               <div class="row">
+               <div class="col">
+                 <img src="../Implementation/b.jpg" class="card-img-top" alt="Belt" width="100px" height="100px">
+                 <a href="../Implementation/PPNew/belt.html">Belt</a>
+               </div>
+               <div class="col">
+                 <img src="../Implementation/foo.jpg" class="card-img-top" alt="Footwear" width="100px" height="100px">
+                 <a href="../Implementation/PPNew/footwear1.html">Footwear</a>
+               </div>
+             </div>
+             <br><br.<br>
+             <a href="../Implementation/PPNew/seemore2.html" class="btn btn-primary">Show More</a>
+           </div>
+           </div>
+           </div>
+           <!--card 2 finish-->
+           <!--card 3-->
+         <div class="col-sm-6 col-md-4 col-lg-3" >
+          <div class="card">
+           <div class="card-body">
+              <h5 class="card-title">Up to 50% off | Clearance Store</h5>
+              <img src="../Implementation/Clearance_store_image.jpg" class="card-img-top" alt="...">
+              <br><br><br>
+              <a href="../Implementation/PPNew/technology.html" class="btn btn-primary">Show More</a>
+            </div>
+          </div>
+        </div>
+        <!--card 3 finish-->
+        <!--card 4-->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card" >
+          <div class="card-body">
+            <h5 class="card-title"> Men's Shirts | Upto 80% off</h5>
+           <div class="row">
+             <div class="col">
+               <img src="../Implementation/n3.jpg" class="card-img-top" alt="phone" >
+              </div>
+             <div class="col">
+               <img src="../Implementation/n2.jpg" class="card-img-top" alt="AC" >
+            </div>
+             </div>
+             <br><br>
+             <div class="row">
+             <div class="col">
+               <img src="../Implementation/n1.jpg" class="card-img-top" alt="..." >
+             </div>
+             <div class="col">
+               <img src="../Implementation/n4.jpg" class="card-img-top" alt="..." >
+            </div>
+           </div>
+           <br><br>
+           <a href="../Implementation/PPNew/clothing1.html" class="btn btn-primary">Show More</a> 
+         </div>
+         </div>
+         </div>
+         <!--card 4 finish-->
+         <!-- Card 5-->
+       <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+             <div class="card-body">
+               <h5 class="card-title"> Bluetooth Earphones | Upto 25% off</h5>
+              <div class="row">
+                <div class="col">
+                  <img src="../Implementation/ear1.png" class="card-img-top" alt="phone" width="100px" height="100px" >
+                  <p>Ptron E12</p>
+                  </div>
+                <div class="col">
+                  <img src="../Implementation/ear2.png" class="card-img-top" alt="AC" width="100px" height="100px"> 
+                  <p>Ptron 550</p>
+                </div>
+                </div>
+                <br>
+                <div class="row">
+                <div class="col">
+                  <img src="../Implementation/ear3.png" class="card-img-top" alt="..." >
+                  <p>Ptron ESA</p>
+                </div>
+                <div class="col">
+                  <img src="../Implementation/ear4.png" class="card-img-top" alt="..." >
+                  <p>Ptron E19</p>
+                </div>
+              </div>
+              <a href="../Implementation/PPNew/Earphones.html" class="btn btn-primary">Show More</a>
+            </div>
+          </div>
+        </div> 
+        <!--card 5 finish-->
+         <!--card 6-->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Styles Watches | Upto 75% off</h5>
+             <div class="row">
+               <div class="col">
+                 <img src="../Implementation/i1.jpg" class="card-img-top" alt="Watches">
+                 <p>Emporio Armani</p>
+               </div>
+               <div class="col">
+                 <img src="../Implementation/i2.jpg" class="card-img-top" alt="AC">
+                 <p>Citizen</p>
+               </div>
+               </div>
+               <br>
+               <div class="row">
+               <div class="col">
+                 <img src="../Implementation/i3.jpg" class="card-img-top" alt="Belt">
+                 <p>A|X</p>
+               </div>
+               <div class="col">
+                 <img src="../Implementation/14.jpg" class="card-img-top" alt="Footwear" >
+                 <p>Mathey Tissot</p>
+               </div>
+             </div>
+          <a href="../Implementation/PPNew/watches.html" class="btn btn-primary">Show More</a>
+           </div>
+           </div>
+           </div>
+            <!--card 6 finish-->
+             <!--card 7 -->
+         <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card" >
+           <div class="card-body">
+              <h5 class="card-title">Up to 60% off | Beauty Products</h5>
+              <img src="../Implementation/makeup.png" class="card-img-top" alt="...">
+              <br><br><br><br>
+              <a href="../Implementation/PPNew/beauty1.html" class="btn btn-primary">Show More</a>
+            </div>
+          </div>
+        </div>
+         <!--card 7 finish-->
+          <!--card 8-->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"> Men's Snikers | Upto 40 off</h5>
+           <div class="row">
+             <div class="col">
+               <img src="../Implementation/se1.jpg"card-img-top" alt="phone" >
+              <p>campus shoes</p>
+             </div>
+             <div class="col">
+               <img src="../Implementation/se2.jpg" class="card-img-top" alt="AC">
+              <p>Nike Shoes</p>
+             </div>
+             </div>
+             <br>
+             <div class="row">
+             <div class="col">
+               <img src="../Implementation/se5.jpg" class="card-img-top" alt="..." >
+              <p>Bacca Bucci</p>
+             </div>
+             <div class="col">
+               <img src="../Implementation/se3.jpg" class="card-img-top" alt="..." >
+               <p>Puma Shoes</p>
+             </div>
+           </div>
+           <br><br><br>
+           <a href="../Implementation/PPNew/footwear1.html" class="btn btn-primary">Show More</a>
+         </div>
+         </div>
+         </div>
+         </div>
+   <!--card 8 finish-->
+      <!--cards -->
+      
+        <footer id="footer" class="dark bg-primary">
+          <p>Developed By:- Rishabh & Nikhil<br>
+          <a href="file:///C:/Users/risha/Desktop/Project/Implementation/shopping%20mall.html" style="color: black;">ShoppingMall.com</a></p>
+            <h3>Customer Policies</h3>
+            <p><a href="../Implementation/about.html" style="color: black;">Contact Us</a></p>
+            <p>FAQ</p>
+            <p>T&C</p>
+            <p>Terms of use</p>
+            <p>Pivacy Policy</p>
+           
+            </footer>
+      </div>
+    </div>
+    <script>
+      function showTime(){
+        var d= new Date();
+        var h= d.getHours();
+        var m= d.getMinutes();
+        var s= d.getSeconds();
+        var session="AM";
+        if(h>=12){
+          session="PM";
+        }
+        if(h>12){
+          h=h-12;
+        }
+        h=h<10?"0"+h:h;
+        m=m<10?"0"+m:m;
+        s=s<10?"0"+s:s;
+        var time=h+":"+m+":"+s+":"+" "+session;
+        document.getElementById("clock").innerText=time;
+        setTimeout(showTime,1000);
+      }
+    </script>
+   </body>
+</html>
